@@ -1,4 +1,4 @@
-root_path = 'D:\hacklytics\chest_xray\';
+root_path = 'C:\Users\Timot\Desktop\pneumonia\';
 test_path = fullfile(root_path, 'test');
 save_path = fullfile(root_path, 'test_noise');
 
@@ -16,7 +16,14 @@ create_folder = fullfile(save_path,'PNEUMONIA');
 if ~exist(create_folder, 'dir')
    mkdir(create_folder)
 end
-
+% create_folder = fullfile(save_path,'DRUSEN');
+% if ~exist(create_folder, 'dir')
+%    mkdir(create_folder)
+% end
+% create_folder = fullfile(save_path,'NORMAL');
+% if ~exist(create_folder, 'dir')
+%    mkdir(create_folder)
+% end
 
 for i = 3:size(folders,1)
     full_path = fullfile(test_path, folders(i).name);
